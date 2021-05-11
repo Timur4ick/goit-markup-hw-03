@@ -1,0 +1,248 @@
+:root {
+  --name-text-color: #212121;
+  --main-text-color: #757575;
+  --bg-color-head-foot: #2f303a;
+  --main-text-color-master: #000000;
+  --special-text-color: #2196f3;
+  --main-bg-color: #ffffff;
+  --foot-text-color: #ffffff 60%;
+  --border-color: #eeeeee;
+  --bg-color-team: #f5f4fa;
+  --border-color-header: #ececec;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--name-text-color);
+}
+/*  bg-header */
+.header-page {
+  border-bottom: 1px solid var(--border-color-header);
+}
+/* убраны подчёркивания и метки */
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+a.current {
+  color: var(--special-text-color);
+  text-decoration: none;
+}
+/* logo style */
+.logo,
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-master);
+}
+/* оформления части логотипа WEB */
+.logo-span {
+  color: var(--special-text-color);
+}
+
+.logo-footer {
+  color: var(--main-bg-color);
+}
+
+.nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--name-text-color);
+}
+
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.section-title {
+  background-color: var(--bg-color-head-foot);
+}
+
+/* Стиль заголовка н1 */
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+}
+
+.btn-main {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  background-color: var(--special-text-color);
+  color: #ffffff;
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  border: none;
+}
+
+.btn-main:hover,
+.btn-main:focus {
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--name-text-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--special-text-color);
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+/* Стиль заголовка н2 */
+.caption {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--name-text-color);
+}
+
+/* Стиль заготовка н3 */
+.heading {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* стиль текста */
+.text {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/* style card */
+.item-team {
+  background-color: var(--main-bg-color);
+  box-sizing: border-box;
+}
+
+/* стиль имени */
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--name-text-color);
+}
+
+/* Стиль для подписи нашей команды */
+.desc-team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/* Цвет футера */
+.footer-bg {
+  background-color: var(--bg-color-head-foot);
+}
+
+.list-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--foot-text-color);
+}
+
+.address {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--main-bg-color);
+}
+
+/* обесцвечивание и скрытия подч]ркивания для ссылки */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Отцентровать */
+.center {
+  text-align: center;
+}
+
+.item :hover,
+.item :focus {
+  color: var(--special-text-color);
+}
+
+/* Стиль для cтилизации заголовка фото в портфолио */
+.subtitle {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--name-text-color);
+}
+/* Стиль для cтилизации описания фото в портфолио */
+.desc {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/* Класс скрывающий элементы */
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
