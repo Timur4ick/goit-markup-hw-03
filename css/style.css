@@ -17,6 +17,7 @@ h3,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -27,12 +28,27 @@ body {
   letter-spacing: 0.03em;
   color: var(--name-text-color);
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*  bg-header */
 .header-page {
+  display: flex;
+  align-items: center;
+
+  max-width: 1600px;
+  height: 80px;
   border-bottom: 1px solid var(--border-color-header);
 }
+
 /* убраны подчёркивания и метки */
 .list {
+  padding-left: 0;
+  margin-left: 0;
   list-style: none;
   text-decoration: none;
 }
@@ -41,9 +57,13 @@ a.current {
   color: var(--special-text-color);
   text-decoration: none;
 }
+
 /* logo style */
 .logo,
 .logo-footer {
+  margin-left: 215px;
+  margin-right: 93px;
+
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-weight: 700;
@@ -52,6 +72,7 @@ a.current {
   letter-spacing: 0.03em;
   color: var(--main-text-color-master);
 }
+
 /* оформления части логотипа WEB */
 .logo-span {
   color: var(--special-text-color);
@@ -61,7 +82,14 @@ a.current {
   color: var(--main-bg-color);
 }
 
+.contact-block {
+  padding-top: 60px;
+}
+
 .nav-list {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -69,11 +97,24 @@ a.current {
   color: var(--name-text-color);
 }
 
+.nav-list .item + .item {
+  margin-left: 50px;
+}
+
 .contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 215px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.contact .item + .item {
+  margin-left: 50px;
 }
 
 .contact-link {
@@ -81,12 +122,32 @@ a.current {
   color: var(--main-text-color);
 }
 
+.section-btn {
+  width: 1170px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: 215px;
+}
+
 .section-title {
+  display: block;
+  max-width: 1600px;
+  height: 600px;
   background-color: var(--bg-color-head-foot);
+}
+
+.section-team {
+  border-color: var(--bg-color-team);
+  max-width: 1600px;
+  height: 648px;
 }
 
 /* Стиль заголовка н1 */
 .title {
+  margin: auto;
+  width: 696px;
+  padding-top: 200px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -97,24 +158,52 @@ a.current {
 }
 
 .btn-main {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  border: none;
+  margin-top: 30px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   border-radius: 4px;
   background-color: var(--special-text-color);
-  color: #ffffff;
-  display: block;
-  width: 200px;
-  height: 50px;
-  margin: auto;
-  border: none;
+  color: var(--main-bg-color);
 }
 
 .btn-main:hover,
 .btn-main:focus {
-  color: var(--main-bg-color);
+  color: var(--main-text-color-master);
   cursor: pointer;
+}
+
+.menu-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.caption {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--name-text-color);
+}
+
+.caption-team {
+  padding-top: 94px;
+}
+
+.list-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 39px;
+}
+
+.list-button .filter-button + .filter-button {
+  margin-left: 8px;
 }
 
 .button {
@@ -124,6 +213,8 @@ a.current {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--name-text-color);
+  border: none;
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -133,13 +224,59 @@ a.current {
   cursor: pointer;
 }
 
-/* Стиль заголовка н2 */
-.caption {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--name-text-color);
+.signature {
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 94px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.description .aside-item + .aside-item {
+  margin-left: 30px;
+}
+
+.section-img {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.list-img .image-item + .image-item {
+  margin-left: 30px;
+}
+
+.block-team {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list-team .item-team + .item-team {
+  margin-left: 30px;
+}
+
+.menu-item {
+  margin-bottom: 30px;
 }
 
 /* Стиль заготовка н3 */
@@ -158,14 +295,38 @@ a.current {
   color: var(--main-text-color);
 }
 
+.team {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+  padding-top: 50px;
+}
+
+.team .item-team + .item-team {
+  margin-left: 30px;
+}
+
 /* style card */
 .item-team {
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--main-bg-color);
-  box-sizing: border-box;
+}
+
+.signature-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* стиль имени */
 .team-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -175,6 +336,8 @@ a.current {
 
 /* Стиль для подписи нашей команды */
 .desc-team {
+  padding-bottom: 30px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -184,10 +347,14 @@ a.current {
 
 /* Цвет футера */
 .footer-bg {
+  max-width: 1600px;
+  height: 252px;
   background-color: var(--bg-color-head-foot);
 }
 
 .list-footer {
+  padding-top: 9px;
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -195,13 +362,26 @@ a.current {
   color: var(--foot-text-color);
 }
 
+.list-footer .item + .item {
+  margin-bottom: 9px;
+}
+
 .address {
+  display: block;
+  padding-top: 20px;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-bg-color);
+}
+
+.address-footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 215px;
 }
 
 /* обесцвечивание и скрытия подч]ркивания для ссылки */
@@ -229,6 +409,9 @@ a.current {
 }
 /* Стиль для cтилизации описания фото в портфолио */
 .desc {
+  display: block;
+  padding-top: 4px;
+
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
