@@ -26,6 +26,7 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 1600px;
   color: var(--name-text-color);
 }
 
@@ -35,17 +36,18 @@ img {
   height: auto;
 }
 
-/*  bg-header */
-.header-page {
-  display: flex;
-  align-items: center;
-
-  max-width: 1600px;
-  height: 80px;
-  border-bottom: 1px solid var(--border-color-header);
+/* Класс скрывающий элементы */
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
-/* убраны подчёркивания и метки */
 .list {
   padding-left: 0;
   margin-left: 0;
@@ -53,12 +55,28 @@ img {
   text-decoration: none;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 a.current {
   color: var(--special-text-color);
   text-decoration: none;
 }
 
-/* logo style */
+
+                     /* general */
+
+.header-page {
+  display: flex;
+  align-items: center;
+
+  /* width: 1600px; */
+  height: 80px;
+  border-bottom: 1px solid var(--border-color-header);
+}
+
 .logo,
 .logo-footer {
   margin-left: 215px;
@@ -73,7 +91,6 @@ a.current {
   color: var(--main-text-color-master);
 }
 
-/* оформления части логотипа WEB */
 .logo-span {
   color: var(--special-text-color);
 }
@@ -82,6 +99,7 @@ a.current {
   color: var(--main-bg-color);
 }
 
+/* footer-contact */
 .contact-block {
   padding-top: 60px;
 }
@@ -94,6 +112,7 @@ a.current {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--name-text-color);
 }
 
@@ -104,7 +123,8 @@ a.current {
 .contact {
   display: flex;
   align-items: center;
-  margin-left: auto;
+
+  margin-left: 331px;
   margin-right: 215px;
 
   font-weight: 500;
@@ -122,27 +142,19 @@ a.current {
   color: var(--main-text-color);
 }
 
-.section-btn {
-  width: 1170px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-left: 215px;
+.item :hover,
+.item :focus {
+  color: var(--special-text-color);
 }
 
+
+
+                  /* index */
 .section-title {
-  display: block;
-  max-width: 1600px;
   height: 600px;
   background-color: var(--bg-color-head-foot);
 }
 
-.section-team {
-  border-color: var(--bg-color-team);
-  max-width: 1600px;
-  height: 648px;
-}
-
-/* Стиль заголовка н1 */
 .title {
   margin: auto;
   width: 696px;
@@ -159,11 +171,13 @@ a.current {
 
 .btn-main {
   display: block;
+
   width: 200px;
   height: 50px;
   margin: auto;
   border: none;
   margin-top: 30px;
+  padding: 0;
 
   font-weight: 700;
   font-size: 16px;
@@ -180,30 +194,26 @@ a.current {
   cursor: pointer;
 }
 
-.menu-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
 
-.caption {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--name-text-color);
-}
-
-.caption-team {
+                /* portfolio - btn */
+.section-btn {
+  width: 1170px;
   padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: 215px;
 }
 
 .list-button {
   display: flex;
   justify-content: center;
-  padding-bottom: 39px;
+  align-items: center;
+
+  padding-bottom: 34px;
+  padding-top: 94px;
 }
 
-.list-button .filter-button + .filter-button {
-  margin-left: 8px;
+.filter-button {
+  background-color: var(--bg-color-team);
 }
 
 .button {
@@ -217,6 +227,10 @@ a.current {
   border-radius: 4px;
 }
 
+.list-button .filter-button + .filter-button {
+  margin-left: 8px;
+}
+
 .button:hover,
 .button:focus {
   background-color: var(--special-text-color);
@@ -224,16 +238,12 @@ a.current {
   cursor: pointer;
 }
 
-.signature {
-  padding: 20px 24px;
-  border: 1px solid var(--border-color);
-  border-top: none;
-}
 
+                     /* index - main */
 .description {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 
   padding-top: 94px;
   margin-left: 200px;
@@ -244,42 +254,6 @@ a.current {
   margin-left: 30px;
 }
 
-.section-img {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.list-img {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-
-.list-img .image-item + .image-item {
-  margin-left: 30px;
-}
-
-.block-team {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.list-team {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.list-team .item-team + .item-team {
-  margin-left: 30px;
-}
-
-.menu-item {
-  margin-bottom: 30px;
-}
-
-/* Стиль заготовка н3 */
 .heading {
   font-size: 14px;
   line-height: 1.14;
@@ -287,7 +261,6 @@ a.current {
   text-transform: uppercase;
 }
 
-/* стиль текста */
 .text {
   font-size: 14px;
   line-height: 1.5;
@@ -295,9 +268,41 @@ a.current {
   color: var(--main-text-color);
 }
 
+.section-img {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.caption {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--name-text-color);
+
+padding-top: 94px;
+padding-bottom: 50px;
+}
+
+.list-img {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 50px;
+}
+
+.list-img .image-item + .image-item {
+  margin-left: 30px;
+}
+
+.section-team {
+  background-color: var(--bg-color-team);
+}
+
 .team {
   display: flex;
   justify-content: center;
+
   padding-bottom: 94px;
   padding-top: 50px;
 }
@@ -306,7 +311,6 @@ a.current {
   margin-left: 30px;
 }
 
-/* style card */
 .item-team {
   width: 270px;
   height: 368px;
@@ -322,7 +326,6 @@ a.current {
   align-items: center;
 }
 
-/* стиль имени */
 .team-name {
   padding-top: 30px;
   padding-bottom: 10px;
@@ -334,7 +337,6 @@ a.current {
   color: var(--name-text-color);
 }
 
-/* Стиль для подписи нашей команды */
 .desc-team {
   padding-bottom: 30px;
 
@@ -345,7 +347,49 @@ a.current {
   color: var(--main-text-color);
 }
 
-/* Цвет футера */
+                 
+
+                  /* portfolio - main */
+.list-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu-item {
+  margin-bottom: 30px;
+}
+
+.menu-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.signature {
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--name-text-color);
+}
+
+.desc {
+  display: block;
+  padding-top: 4px;
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+
+
+                 /* footer-general */
 .footer-bg {
   max-width: 1600px;
   height: 252px;
@@ -384,48 +428,4 @@ a.current {
   padding-left: 215px;
 }
 
-/* обесцвечивание и скрытия подч]ркивания для ссылки */
-.link {
-  text-decoration: none;
-  color: inherit;
-}
 
-/* Отцентровать */
-.center {
-  text-align: center;
-}
-
-.item :hover,
-.item :focus {
-  color: var(--special-text-color);
-}
-
-/* Стиль для cтилизации заголовка фото в портфолио */
-.subtitle {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--name-text-color);
-}
-/* Стиль для cтилизации описания фото в портфолио */
-.desc {
-  display: block;
-  padding-top: 4px;
-
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-}
-
-/* Класс скрывающий элементы */
-.visually-hidden {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
