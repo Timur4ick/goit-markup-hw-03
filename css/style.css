@@ -65,8 +65,7 @@ a.current {
   text-decoration: none;
 }
 
-
-                     /* general */
+/* general */
 
 .header-page {
   display: flex;
@@ -147,9 +146,7 @@ a.current {
   color: var(--special-text-color);
 }
 
-
-
-                  /* index */
+/* index */
 .section-title {
   height: 600px;
   background-color: var(--bg-color-head-foot);
@@ -194,8 +191,7 @@ a.current {
   cursor: pointer;
 }
 
-
-                /* portfolio - btn */
+/* portfolio - btn */
 .section-btn {
   width: 1170px;
   padding-top: 94px;
@@ -238,8 +234,7 @@ a.current {
   cursor: pointer;
 }
 
-
-                     /* index - main */
+/* index - main */
 .description {
   display: flex;
   justify-content: center;
@@ -280,8 +275,8 @@ a.current {
   letter-spacing: 0.03em;
   color: var(--name-text-color);
 
-padding-top: 94px;
-padding-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .list-img {
@@ -347,9 +342,7 @@ padding-bottom: 50px;
   color: var(--main-text-color);
 }
 
-                 
-
-                  /* portfolio - main */
+/* portfolio - main */
 .list-team {
   display: flex;
   flex-wrap: wrap;
@@ -387,9 +380,7 @@ padding-bottom: 50px;
   color: var(--main-text-color);
 }
 
-
-
-                 /* footer-general */
+/* footer-general */
 .footer-bg {
   max-width: 1600px;
   height: 252px;
@@ -427,5 +418,3 @@ padding-bottom: 50px;
   flex-direction: column;
   padding-left: 215px;
 }
-
-
