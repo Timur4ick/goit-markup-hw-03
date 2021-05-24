@@ -27,7 +27,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--name-text-color);
-  max-width: 1600px;
 }
 
 img {
@@ -55,7 +54,7 @@ img {
 
 .container {
   width: 1200px;
-  margin: 0 200px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
