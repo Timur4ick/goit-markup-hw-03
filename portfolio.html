@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <!--адаптация под IE и Edje-->
-    <meta name="goit-markup-hw-03" content="Третье ДЗ" />
-    <title>Homework-3</title>
+    <meta name="goit-markup-hw-04" content="Четвертое ДЗ" />
+    <title>Homework-4</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -37,11 +37,19 @@
         <ul class="contact list">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="contact-link"
-              >info@devstudio.com</a
+              >
+              <svg class="icon-mail">
+                <use href="./images/sprite-2.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="contact-link">+380961111111</a>
+            <a href="tel:+380961111111" class="contact-link">
+              <svg class="icon-mail">
+                <use href="./images/sprite-2.svg#icon-smartphone"></use>
+              </svg>
+              +380961111111</a>
           </li>
         </ul>
       </div>
@@ -222,9 +230,43 @@
               >
               <!--Активный телефон-->
             </li>
-          </ul>
+            </ul>
+          
         </address>
       </div>
+      <div class="social-join">
+        <h2 class="join-name">присоединяйтесь</h2>
+        <ul class="join-list">
+          <li class="join-item">
+            <a href="" class="join-link">
+              <svg class="join-icon" style="width: 20px; height: 20px;">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="join-item">
+            <a href="" class="join-link">
+              <svg class="join-icon" style="width: 20px; height: 20px;">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="join-item">
+            <a href="" class="join-link">
+              <svg class="join-icon" style="width: 20px; height: 20px;">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="join-item">
+            <a href="" class="join-link">
+              <svg class="join-icon" style="width: 20px; height: 20px;">
+                <use href="./images/sprite.svg#icon-linkedin2"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        </div>
     </footer>
   </body>
 </html>
