@@ -151,8 +151,6 @@ a.current {
 }
 
 .icon-mail {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
 
   fill: var(--main-text-color);
@@ -179,7 +177,7 @@ a.current {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./images/imgs.jpg);
+    url(../images/imgs.jpg);
 }
 
 .title {
