@@ -9,6 +9,7 @@
   --border-color: #eeeeee;
   --bg-color-team: #f5f4fa;
   --border-color-header: #ececec;
+  --card-social-color: #afb1b8;
 }
 
 h1,
@@ -170,6 +171,8 @@ a.current {
 .section-title {
   padding-top: 200px;
   padding-bottom: 200px;
+  width: 1600px;
+  margin: auto;
 
   background-size: auto;
   background-color: var(--bg-color-head-foot);
@@ -224,6 +227,7 @@ a.current {
 
 .gallery-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .gallery-item {
@@ -236,10 +240,6 @@ a.current {
 
   background: var(--bg-color-team);
   border-radius: 4px;
-}
-
-.gallery-list .gallery-item + .gallery-item {
-  margin-left: 30px;
 }
 
 /* portfolio - btn */
@@ -266,6 +266,7 @@ a.current {
   color: var(--name-text-color);
   border: none;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .list-button .filter-button + .filter-button {
@@ -292,7 +293,7 @@ a.current {
 .aside-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100%-120px) / 4);
+  flex-basis: calc ((100%-120px) / 4);
 }
 
 .heading {
@@ -323,13 +324,9 @@ a.current {
 
 .list-img {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   padding-top: 50px;
-}
-
-.list-img .image-item + .image-item {
-  margin-left: 30px;
 }
 
 .section-team {
@@ -348,6 +345,7 @@ a.current {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-bg-color);
+  padding-bottom: 30px;
 }
 
 .team .item-team + .item-team {
@@ -358,11 +356,11 @@ a.current {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  padding-top: 30px;
+padding-bottom: 16px;}
 
 .team-name {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -372,8 +370,6 @@ a.current {
 }
 
 .desc-team {
-  padding-bottom: 30px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -382,10 +378,7 @@ a.current {
 }
 
 .social {
-  margin-right: 32px;
-  margin-left: 32px;
-  margin-bottom: 30px;
-  margin-top: 16px;
+  padding: 0 32px;
 }
 
 .social-list {
@@ -408,11 +401,11 @@ a.current {
   height: 44px;
 
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--main-bg-color);
 }
 
 .icon-social {
-  fill: #afb1b8;
+  fill: var(--card-social-color);
 }
 
 .social-link:hover,
@@ -422,7 +415,7 @@ a.current {
 
 .social-link:hover .icon-social,
 .social-link:focus .icon-social {
-  fill: #ffffff;
+  fill: var(--main-bg-color);
 }
 
 /* portfolio - main */
@@ -489,7 +482,7 @@ a.current {
 .client-card {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+  fill: var(--card-social-color);
 }
 
 .client-item:hover,
@@ -547,6 +540,7 @@ a.current {
 /* footer-contact */
 .contact-block {
   display: flex;
+  align-items: baseline;
 
   padding-top: 60px;
 }
@@ -562,7 +556,7 @@ a.current {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--main-bg-color);
 
   margin-bottom: 20px;
 }
@@ -587,7 +581,7 @@ a.current {
 }
 
 .join-icon {
-  fill: #ffffff;
+  fill: var(--main-bg-color);
 }
 
 .join-link:hover,
